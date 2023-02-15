@@ -1,9 +1,6 @@
   public record ItemRequest (
-                    string Id,
+                    Guid Id,
                       string Description,
-                      float QuantityOnHand,
-                      float SellingPrice,
-                      float CostPrice,
-                      string CostCode,
-                      int ReorderLevel
+                      string Name,
+                      float Price
                       );

@@ -53,6 +53,10 @@
               "target": "Package",
               "version": "[6.4.0, )"
             },
+            "mapster": {
+              "target": "Package",
+              "version": "[7.3.0, )"
+            },
             "microsoft.entityframeworkcore": {
               "target": "Package",
               "version": "[7.0.3, )"
