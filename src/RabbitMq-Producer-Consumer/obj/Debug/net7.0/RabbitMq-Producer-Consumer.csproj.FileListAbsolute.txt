@@ -1,0 +1,5 @@
+C:\SHGApplication\CST\microservice-net7-rabbitmq\src\RabbitMq-Producer-Consumer\obj\Debug\net7.0\RabbitMq-Producer-Consumer.csproj.AssemblyReference.cache
+C:\SHGApplication\CST\microservice-net7-rabbitmq\src\RabbitMq-Producer-Consumer\obj\Debug\net7.0\RabbitMq-Producer-Consumer.GeneratedMSBuildEditorConfig.editorconfig
+C:\SHGApplication\CST\microservice-net7-rabbitmq\src\RabbitMq-Producer-Consumer\obj\Debug\net7.0\RabbitMq-Producer-Consumer.AssemblyInfoInputs.cache
+C:\SHGApplication\CST\microservice-net7-rabbitmq\src\RabbitMq-Producer-Consumer\obj\Debug\net7.0\RabbitMq-Producer-Consumer.AssemblyInfo.cs
+C:\SHGApplication\CST\microservice-net7-rabbitmq\src\RabbitMq-Producer-Consumer\obj\Debug\net7.0\RabbitMq-Producer-Consumer.csproj.CoreCompileInputs.cache

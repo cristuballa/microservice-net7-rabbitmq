@@ -1,0 +1,17 @@
+C:\SHGApplication\CST\microservice-net7-rabbitmq\src\RabbitMq-Producer-Consumer\Consumer\obj\Debug\net7.0\Consumer.csproj.AssemblyReference.cache
+C:\SHGApplication\CST\microservice-net7-rabbitmq\src\RabbitMq-Producer-Consumer\Consumer\obj\Debug\net7.0\Consumer.GeneratedMSBuildEditorConfig.editorconfig
+C:\SHGApplication\CST\microservice-net7-rabbitmq\src\RabbitMq-Producer-Consumer\Consumer\obj\Debug\net7.0\Consumer.AssemblyInfoInputs.cache
+C:\SHGApplication\CST\microservice-net7-rabbitmq\src\RabbitMq-Producer-Consumer\Consumer\obj\Debug\net7.0\Consumer.AssemblyInfo.cs
+C:\SHGApplication\CST\microservice-net7-rabbitmq\src\RabbitMq-Producer-Consumer\Consumer\obj\Debug\net7.0\Consumer.csproj.CoreCompileInputs.cache
+C:\SHGApplication\CST\microservice-net7-rabbitmq\src\RabbitMq-Producer-Consumer\Consumer\bin\Debug\net7.0\Consumer.exe
+C:\SHGApplication\CST\microservice-net7-rabbitmq\src\RabbitMq-Producer-Consumer\Consumer\bin\Debug\net7.0\Consumer.deps.json
+C:\SHGApplication\CST\microservice-net7-rabbitmq\src\RabbitMq-Producer-Consumer\Consumer\bin\Debug\net7.0\Consumer.runtimeconfig.json
+C:\SHGApplication\CST\microservice-net7-rabbitmq\src\RabbitMq-Producer-Consumer\Consumer\bin\Debug\net7.0\Consumer.dll
+C:\SHGApplication\CST\microservice-net7-rabbitmq\src\RabbitMq-Producer-Consumer\Consumer\bin\Debug\net7.0\Consumer.pdb
+C:\SHGApplication\CST\microservice-net7-rabbitmq\src\RabbitMq-Producer-Consumer\Consumer\bin\Debug\net7.0\RabbitMQ.Client.dll
+C:\SHGApplication\CST\microservice-net7-rabbitmq\src\RabbitMq-Producer-Consumer\Consumer\obj\Debug\net7.0\Consumer.csproj.CopyComplete
+C:\SHGApplication\CST\microservice-net7-rabbitmq\src\RabbitMq-Producer-Consumer\Consumer\obj\Debug\net7.0\Consumer.dll
+C:\SHGApplication\CST\microservice-net7-rabbitmq\src\RabbitMq-Producer-Consumer\Consumer\obj\Debug\net7.0\refint\Consumer.dll
+C:\SHGApplication\CST\microservice-net7-rabbitmq\src\RabbitMq-Producer-Consumer\Consumer\obj\Debug\net7.0\Consumer.pdb
+C:\SHGApplication\CST\microservice-net7-rabbitmq\src\RabbitMq-Producer-Consumer\Consumer\obj\Debug\net7.0\Consumer.genruntimeconfig.cache
+C:\SHGApplication\CST\microservice-net7-rabbitmq\src\RabbitMq-Producer-Consumer\Consumer\obj\Debug\net7.0\ref\Consumer.dll

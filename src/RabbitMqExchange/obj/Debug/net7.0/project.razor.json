@@ -1,6 +1,6 @@
 {
-  "SerializedFilePath": "c:\\SHGApplication\\CST\\microservice-net7-rabbitmq\\src\\ItemService\\obj\\Debug\\net7.0\\project.razor.json",
-  "FilePath": "c:\\SHGApplication\\CST\\microservice-net7-rabbitmq\\src\\ItemService\\ItemService.csproj",
+  "SerializedFilePath": "c:\\SHGApplication\\CST\\microservice-net7-rabbitmq\\src\\RabbitMqExchange\\obj\\Debug\\net7.0\\project.razor.json",
+  "FilePath": "c:\\SHGApplication\\CST\\microservice-net7-rabbitmq\\src\\RabbitMqExchange\\RabbitMqExchange.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "7.0",
@@ -18642,7 +18642,7 @@
     ],
     "CSharpLanguageVersion": 1100
   },
-  "RootNamespace": "ItemService",
+  "RootNamespace": "RabbitMqExchange",
   "Documents": [],
   "SerializationFormat": "0.3"
 }
