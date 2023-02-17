@@ -15,6 +15,6 @@ public static class Program
         };
         using var connection = factory.CreateConnection();
         using var channel = connection.CreateModel();
-        DirectExchangeConsumer.Consume(channel);      
+        HeaderExchangeConsumer.Consume(channel);      
      }
 }
