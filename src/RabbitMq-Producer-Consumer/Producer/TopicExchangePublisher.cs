@@ -15,14 +15,14 @@ public static class TopicExchangePublisher
             {"x-message-ttl",30000}
         };
 
-        channel.ExchangeDeclare("demo-direct-exchange",ExchangeType.Direct,arguments: ttl);
+        channel.ExchangeDeclare("demo-topic-exchange",ExchangeType.Topic,arguments: ttl);
 
         while(true)
         {
             var message= new { Name = $"Producer {count}", Message = $"Hello from producer {count}" };
             var body=Encoding.UTF8.GetBytes(JsonSerializer.Serialize(message));
 
-            channel.BasicPublish("demo-direct-exchange","account.init",basicProperties: null,body: body);
+            channel.BasicPublish("demo-topic-exchange","account.init",basicProperties: null,body: body);
 
             Console.WriteLine($"Message {count} sent");
             Task.Delay(1000).Wait();
