@@ -114,23 +114,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\crispin.tuballa\\.nuget\\packages\\": {},
+    "C:\\Users\\Cris\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\SHGApplication\\CST\\microservice-net7-rabbitmq\\src\\RabbitMq-Producer-Consumer\\Producer\\Producer.csproj",
+      "projectUniqueName": "C:\\Bluenbean Software\\microservices-net7-rabbitmq\\src\\RabbitMq-Producer-Consumer\\Producer\\Producer.csproj",
       "projectName": "Producer",
-      "projectPath": "C:\\SHGApplication\\CST\\microservice-net7-rabbitmq\\src\\RabbitMq-Producer-Consumer\\Producer\\Producer.csproj",
-      "packagesPath": "C:\\Users\\crispin.tuballa\\.nuget\\packages\\",
-      "outputPath": "C:\\SHGApplication\\CST\\microservice-net7-rabbitmq\\src\\RabbitMq-Producer-Consumer\\Producer\\obj\\",
+      "projectPath": "C:\\Bluenbean Software\\microservices-net7-rabbitmq\\src\\RabbitMq-Producer-Consumer\\Producer\\Producer.csproj",
+      "packagesPath": "C:\\Users\\Cris\\.nuget\\packages\\",
+      "outputPath": "C:\\Bluenbean Software\\microservices-net7-rabbitmq\\src\\RabbitMq-Producer-Consumer\\Producer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\crispin.tuballa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Cris\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

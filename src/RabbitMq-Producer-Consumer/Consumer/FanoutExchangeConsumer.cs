@@ -4,20 +4,19 @@ using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 
 namespace Producer;
-public static class HeaderExchangeConsumer
+public static class FanoutExchangeConsumer
 {
     public static void Consume(IModel channel)
     {
-        channel.ExchangeDeclare("demo-header-exchange", ExchangeType.Headers);
-        channel.QueueDeclare("demo-header-queue",
+        channel.ExchangeDeclare("demo-fanout-exchange", ExchangeType.Fanout);
+        channel.QueueDeclare("demo-fanout-queue",
                                 durable: true,
                                 exclusive: false,
                                 autoDelete: false,
                                 arguments: null
                                 );
-        var header = new Dictionary<string, object>() { { "account", "new" } };
 
-        channel.QueueBind("demo-header-queue", "demo-header-exchange", string.Empty, header);
+        channel.QueueBind("demo-fanout-queue", "demo-fanout-exchange", string.Empty);
         channel.BasicQos(0, 10, false);
 
         var consumer = new EventingBasicConsumer(channel);
@@ -27,7 +26,7 @@ public static class HeaderExchangeConsumer
             var message = Encoding.UTF8.GetString(body);
             Console.WriteLine("Received {0}", message);
         };
-        channel.BasicConsume("demo-header-queue", true, consumer);
+        channel.BasicConsume("demo-fanout-queue", true, consumer);
         Console.ReadLine();
     }
 }

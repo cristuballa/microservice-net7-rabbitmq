@@ -4,7 +4,7 @@ using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 
 namespace Producer;
-public static class HeaderExchangePublisher
+public static class FanoutExchangePublisher
 {
     private static int count;
 
@@ -15,24 +15,25 @@ public static class HeaderExchangePublisher
             {"x-message-ttl",30000}
         };
 
-        channel.ExchangeDeclare("demo-header-exchange", ExchangeType.Headers, arguments: ttl);
+        channel.ExchangeDeclare("demo-fanout-exchange", ExchangeType.Fanout, arguments: ttl);
 
         while (true)
         {
-            var message = new { Name = $"Producer {count}", Message = $"Hello from producer {count}" };
+            var message = new { Name = $"Producer {count}", Message = $"Hello from produce= {count}" };
             var body = Encoding.UTF8.GetBytes(JsonSerializer.Serialize(message));
 
             var properties = channel.CreateBasicProperties();
             properties.Headers = new Dictionary<string, object>
             {
-                {"account","new"}
+                {"account","update"}
             };
 
-            channel.BasicPublish("demo-header-exchange", string.Empty, basicProperties: properties, body: body);
+            channel.BasicPublish("demo-fanout-exchange", "user.new", basicProperties: properties, body: body);
 
             Console.WriteLine($"Message {count} sent");
-            Task.Delay(10).Wait();
+            Task.Delay(1000).Wait();
             count++;
         }
+
     }
 }

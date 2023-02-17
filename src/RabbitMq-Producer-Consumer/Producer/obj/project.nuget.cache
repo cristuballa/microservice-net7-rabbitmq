@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "7QC1SMKhBCHpds7s93xa4lk3UwJijC7YXGm0WAax4w22h4XUt8E8LIwC6BjppM/w+nvTdm78Bz0K4L6Fkoi+xA==",
+  "dgSpecHash": "xsouP0fF4jhZx4IwL0dbWqeWOzmpmXUkQjbipKi+d2H5mPsuxHODkKWGEIG1xYF/6YuQhvBIuHB9HXZl9DJw6A==",
   "success": true,
-  "projectFilePath": "C:\\SHGApplication\\CST\\microservice-net7-rabbitmq\\src\\RabbitMq-Producer-Consumer\\Producer\\Producer.csproj",
+  "projectFilePath": "C:\\Bluenbean Software\\microservices-net7-rabbitmq\\src\\RabbitMq-Producer-Consumer\\Producer\\Producer.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\crispin.tuballa\\.nuget\\packages\\rabbitmq.client\\6.4.0\\rabbitmq.client.6.4.0.nupkg.sha512",
-    "C:\\Users\\crispin.tuballa\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
-    "C:\\Users\\crispin.tuballa\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+    "C:\\Users\\Cris\\.nuget\\packages\\rabbitmq.client\\6.4.0\\rabbitmq.client.6.4.0.nupkg.sha512",
+    "C:\\Users\\Cris\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Cris\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
   ],
   "logs": []
 }

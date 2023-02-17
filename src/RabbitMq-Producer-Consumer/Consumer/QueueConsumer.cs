@@ -13,7 +13,7 @@ public static class QueueConsumer
                              autoDelete: false,
                              arguments: null
                              );
-                             
+
         var consumer = new EventingBasicConsumer(channel);
         consumer.Received += (sender, ea) =>
         {
@@ -25,4 +25,3 @@ public static class QueueConsumer
         Console.ReadLine();
     }
  }
- 
