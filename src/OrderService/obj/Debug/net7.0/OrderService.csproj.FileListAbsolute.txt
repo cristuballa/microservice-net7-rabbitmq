@@ -1,0 +1,7 @@
+C:\Bluenbean Software\microservices-net7-rabbitmq\src\OrderService\obj\Debug\net7.0\OrderService.csproj.AssemblyReference.cache
+C:\Bluenbean Software\microservices-net7-rabbitmq\src\OrderService\obj\Debug\net7.0\OrderService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Bluenbean Software\microservices-net7-rabbitmq\src\OrderService\obj\Debug\net7.0\OrderService.AssemblyInfoInputs.cache
+C:\Bluenbean Software\microservices-net7-rabbitmq\src\OrderService\obj\Debug\net7.0\OrderService.AssemblyInfo.cs
+C:\Bluenbean Software\microservices-net7-rabbitmq\src\OrderService\obj\Debug\net7.0\OrderService.csproj.CoreCompileInputs.cache
+C:\Bluenbean Software\microservices-net7-rabbitmq\src\OrderService\obj\Debug\net7.0\OrderService.MvcApplicationPartsAssemblyInfo.cs
+C:\Bluenbean Software\microservices-net7-rabbitmq\src\OrderService\obj\Debug\net7.0\OrderService.MvcApplicationPartsAssemblyInfo.cache

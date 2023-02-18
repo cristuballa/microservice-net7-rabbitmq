@@ -34,6 +34,5 @@ public static class FanoutExchangePublisher
             Task.Delay(1000).Wait();
             count++;
         }
-
     }
 }

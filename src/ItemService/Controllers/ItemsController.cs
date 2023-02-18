@@ -1,6 +1,7 @@
 using ItemService.Common.Interfaces;
 using ItemService.Interfaces;
 using ItemService.Models;
+using MassTransit;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ItemService.Controllers;
@@ -9,10 +10,12 @@ namespace ItemService.Controllers;
 public class ItemsController : ControllerBase
 {
     private readonly IItemService _repository;
+    private readonly IPublishEndpoint _publishEndpoint;
 
-    public ItemsController(IItemService repository)
+    public ItemsController(IItemService repository, IPublishEndpoint publishEndpoint)
     {
         _repository = repository;
+        _publishEndpoint = publishEndpoint;
     }
 
     [HttpGet]
@@ -45,16 +48,15 @@ public class ItemsController : ControllerBase
             Id = Guid.NewGuid(),
             Name = itemDto.Name,
             Price = itemDto.Price,
-            CreatedDate = DateTimeOffset.UtcNow
         };
 
-        await _repository.CreateItemAsync(item);
+        await _publishEndpoint.Publish(item);
 
-        return CreatedAtAction(nameof(GetItemAsync), new { id = item.Id }, item.AsDto());
+        return CreatedAtAction(nameof(GetItemAsync), new { id = item.Id }, itemDto);
     }
 
     [HttpPut("{id}")]
-    public async Task<ActionResult> UpdateItemAsync(Guid id, UpdateItemDto itemDto)
+    public async Task<ActionResult> UpdateItemAsync(Guid id, ItemRequest itemDto)
     {
         var existingItem = await _repository.GetItemAsync(id);
 
@@ -63,13 +65,13 @@ public class ItemsController : ControllerBase
             return NotFound();
         }
 
-        Item updatedItem = existingItem with
-        {
-            Name = itemDto.Name,
-            Price = itemDto.Price
-        };
+        // Item updatedItem = existingItem with
+        // {
+        //     Name = itemDto.Name,
+        //     Price = itemDto.Price
+        // };
 
-        await _repository.UpdateItemAsync(updatedItem);
+        // await _repository.UpdateItemAsync(updatedItem);
 
         return NoContent();
     }
