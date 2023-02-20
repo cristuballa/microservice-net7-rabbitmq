@@ -1,0 +1,14 @@
+
+POST http://localhost:5234/Items/create
+Content-Type: application/json
+
+{
+    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "description": "Description",
+    "name": "Tuballa",
+    "price": 70.00
+}
+###
+
+GET http://localhost:5234/WeatherForecast/GetWeatherForecast1
+Content-Type: application/json

@@ -1,6 +1,6 @@
 {
-  "SerializedFilePath": "c:\\Bluenbean Software\\microservices-net7-rabbitmq\\src\\OrderService\\obj\\Debug\\net7.0\\project.razor.json",
-  "FilePath": "c:\\Bluenbean Software\\microservices-net7-rabbitmq\\src\\OrderService\\OrderService.csproj",
+  "SerializedFilePath": "c:\\Bluenbean Software\\microservices-net7-rabbitmq\\src\\CatalogService\\obj\\Debug\\net7.0\\project.razor.json",
+  "FilePath": "c:\\Bluenbean Software\\microservices-net7-rabbitmq\\src\\CatalogService\\ItemService.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "7.0",
@@ -18642,7 +18642,7 @@
     ],
     "CSharpLanguageVersion": 1100
   },
-  "RootNamespace": "OrderService",
+  "RootNamespace": "ItemService",
   "Documents": [],
   "SerializationFormat": "0.3"
 }

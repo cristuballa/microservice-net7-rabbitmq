@@ -1,5 +1,8 @@
+using Interfaces;
+using DataAccess;
 using MassTransit;
-using OrderService;
+using Catalog.Services;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,19 +13,16 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//Mass transit configuration
+var configuration = builder.Configuration;
+builder.Services.AddDbContext<ItemDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddScoped<IItemRepository, ItemRepository>();
+builder.Services.AddScoped<IItemService, CatalogService>();
+
 builder.Services.AddMassTransit(config =>
 {
-    config.AddConsumer<ItemConsumer>();
     config.UsingRabbitMq((ctx, cfg) =>
-    {
-        cfg.Host("amqp://guest:guest@localhost:5672");
-        cfg.ReceiveEndpoint("item-queue", c =>
-        {
-            c.ConfigureConsumer<ItemConsumer>(ctx);
-        }
-        );
-    });
+        cfg.Host("amqp://guest:guest@localhost:5672")
+    );
 });
 
 var app = builder.Build();
@@ -34,7 +34,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
